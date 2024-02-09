@@ -1,0 +1,128 @@
+body {
+   font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: .3vw;
+}
+/* Header Styling */
+header {
+    background-color: #ebebeb;
+    padding: 1rem 2vw;   
+}
+header h1 {
+    margin: 0;
+    color: #2F4B83;
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+header p {
+    margin: .5vw;
+    color: #2F4B83;
+    letter-spacing: .5px;
+}
+
+/* Nav Styling */
+nav {
+   background-color: #708f56;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+nav a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #ebebeb;
+    font-weight: 700;
+    display: flex;
+    padding: .85rem;
+}
+nav li.active a {
+    background-color: #2F4B83; 
+        color: #ebebeb;
+}
+
+nav a:hover {
+    background-color: #2f4b83;
+    color: #ebebeb;
+}
+
+/* Main Styling */
+main {
+    padding: .5rem;
+}
+main h1 {
+    color: #ebebeb;
+    background-color: #708F56;
+    padding: .3rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+main h2 {
+    color: #2f4b83;
+    margin: 0;
+}
+main h3 {
+    color: #2F4B83;
+    font-weight: 700;
+    margin: .8rem 0 0 0;
+}
+main p {
+    color: #2f3133;
+    margin: .5rem 0 .3rem .5rem;
+}
+main ol {
+    padding: .5rem 3vw;
+    background-color: #efefef
+}
+
+main ul {
+    list-style-type: square;
+    margin: 0 0 .3rem .5rem;
+}
+main ul li {
+    line-height: 100%;
+    margin: .2rem 0 .3rem .5rem;
+    font-size: 1rem;
+}
+main dl dt {
+    color: #2f4b83;
+    font-weight: 700;
+    margin: .3rem 0 .3rem 1rem;
+}
+main dl dd {
+    color: #2F4B83;
+}
+main address {
+    font-style: normal;
+    background-color: #ebebeb;
+    padding: .4rem;
+    width: 11rem;
+    border-style: solid;
+    border-color: #2F4B83;
+    border-radius: .3rem;
+    color: #2f4b83;
+}
+main a {
+   color: #2F4B83  
+}
+main a:hover {
+   color: #932600; 
+}
+/* Footer Styling */
+footer {
+    background-color: #ebebeb;
+    text-align: center;
+    color: #2F4B83;
+    padding: .25rem;
+    font-size: 1rem;
+}
+footer a {
+    color: #2F4B83;
+}
+footer a:hover {
+    color: #932600;
+}
