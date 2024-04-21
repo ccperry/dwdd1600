@@ -1,0 +1,542 @@
+/* master styling list */
+/* colors: 
+sand #f1e9d3 rgba(241, 233, 211, 1)
+light sand #fafafa
+yellow #edc04e rgba(237, 192, 78, 1)
+light yellow #F9E1A4
+brown #603913 rgba(96, 57, 19, 1)
+dark blue #214c6f rgba(33, 76, 111, 1)
+light blue #8dc0bc rgba(141, 192, 188, 1)
+extra light blue #D4E8E6
+green #749343 rgba(116, 147, 67, 1)
+extra light green #DBE7CB
+dark green #475A29  rgba(71, 90, 41, 1)
+bright red #f15e43 rgba(241, 94, 67, 1)
+end color list*/
+
+
+
+body {
+   font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: .3vw;   
+}
+
+/* prevent problems with different browsers */
+* {
+box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+    background-color: #f7f4e8;
+    display: flex;
+    padding: .5vw 1vw .5vw .5vw;
+}
+
+header img {
+    padding: 1vw 1.5vw 1vw 1vw;
+}
+
+header h1 {
+    margin: 0;
+    color: #214c6f;
+    font-size: 1.75rem;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    padding-top: 20px;
+    position: absolute;
+}
+header p {
+    margin: .5vw;
+    color: #214c6f;
+    letter-spacing: .5px;
+    position: absolute;
+    padding-top: 60px;
+}
+
+/* Nav Styling */
+
+/* SMALL screens formatting */
+@media only screen and (max-width: 600px) {
+    nav {
+        background-color: #fafafa;
+    }
+    
+    nav ul {
+    margin: 0;
+    padding: 0 .5rem;
+    list-style-type: none;
+    }
+    
+    nav a {
+    display: block;
+    padding: .5rem;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    color: #214c6f;
+    }
+    
+    nav .active a {
+    background-image: linear-gradient(to bottom, #214c6f, #8dc0bc);
+    color: #fafafa;
+    }
+    
+    nav a:hover {
+    background-image: linear-gradient(to bottom, #749343, #475A29);
+    color: #fafafa;
+    } 
+    
+} /* end of SMALL screens styling */
+
+/*  BIG SCREENS formatting */
+@media only screen and (min-width: 601px) {
+
+    nav {
+    background-image: linear-gradient(to bottom, #214c6f, #8dc0bc);
+    }
+    
+    nav ul {
+    display: flex;
+    margin: 0;
+    align-items: flex-end;
+    list-style-type: none;
+    padding: 0 .5rem 0 0;
+    color: #fafafa;
+    }
+
+    nav a {
+    display: flex;
+    padding: .5rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fafafa;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    background-image: linear-gradient(to bottom, #214c6f, #8dc0bc);
+    }
+    
+    nav li.active a {
+    background-image: linear-gradient(to bottom, #749343, #475A29);
+    color: #fafafa;
+    }
+
+    nav a:hover {
+    background-image: linear-gradient(to top, #214c6f, #8dc0bc);
+    color: #fafafa;
+    }   
+    
+} /* end of BIG SCREENS formatting */
+
+
+/* Main Styling */
+main {
+    padding: .75vw;
+}
+
+figure.beach {
+    background-image: url(images/beachh1.jpg);
+    background-repeat: no-repeat;
+    background-size: 75%;
+    width: 300px;
+    height: 100px;
+    margin: 0;
+}
+
+figure.beach h1 {
+    padding: 0;
+    font-size: 1.5rem;
+    color: #603913;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    margin: .2rem 0 0 .5rem;   
+}
+
+main h2 {
+    color: #214c6f;
+    margin: .7rem;
+    background-color: rgba(141, 192, 188, .4);
+    padding: .5vw;
+    margin: 0 0 .3rem .5rem;
+}
+
+main h3 {
+    color: #214c6f;
+    margin: .5rem 0 .4vw .5rem;
+    font-weight: 700;
+}
+
+main h4 {
+    color: #214c6f;
+    margin: .5rem 0 .4vw .5rem;
+}
+
+main p {
+    color: #603913;
+    margin: .5rem 0 .5rem .75rem;
+}
+
+span.company {
+    font-weight: 900;
+}
+
+main ul {
+    list-style-type: square;
+    margin: .5rem 0 .75rem .5rem;
+    color: #603913;
+}
+
+main ul li {
+    margin: .4rem 0 .4rem .5rem;
+    font-size: 1rem;
+    color: #603913;
+}
+
+main address {
+    font-style: normal;
+    background-color: #fafafa;
+    padding: .4rem;
+    width: 11rem;
+    border-style: solid;
+    border-color: #8dc0bc;
+    border-radius: 3px;
+    color: #214c6f;
+    margin: .5rem 0 .75rem 1rem;
+}
+main a {
+   color: #214c6f;  
+}
+
+main a:hover {
+   color: #f15e43; 
+} 
+
+main dl {
+    border: 1px solid #8dc0bc;
+    padding: .5rem;
+    margin: .5rem .5rem .8rem .8rem;
+}
+
+main dl dt {
+    color: #214c6f;
+    font-weight: 700;
+    margin: .5rem 0 .5rem .75rem;
+}
+
+main dl dd {
+    color: #214c6f;
+    margin: .3rem 0 .3rem 1rem;
+}
+
+.vacations img {
+    width: 40%;
+    height: auto;
+}
+
+
+/* destination gallery styling */
+div.gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery figure{
+    border: 1px solid #8dc0bc;
+    padding: .5rem;
+}
+
+div.gallery img {
+    display: flex;
+    flex-wrap: wrap;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    height: auto;
+    margin-top: .5rem;
+}
+
+div.gallery figcaption{
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 600;
+    color: #214c6f;
+    padding: .5rem;
+    background-color: #fafafa;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: inset 0px 0px 10px rgba(237, 192, 78, .5); 
+    margin: 0 0 .9rem 0;
+}
+
+.gallery img:hover {
+     box-shadow: 0px 0px 10px rgba(0,0,0,.5); 
+}
+
+/* more information styling */
+
+.moreinfo label {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    color: #603913;
+    margin: .3rem 0 .3rem .3rem;
+}
+
+.moreinfo fieldset {
+    border: 1px solid #214c6f;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+    margin-left: .9rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.moreinfo :required {
+    background-color: rgba(241, 94, 67, .15);
+    border-radius: 3px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    margin: .3rem 0 0 .3rem;
+    display: block;
+}
+
+.moreinfo [type=email] {
+    margin: .3rem 0 0 .3rem;
+}
+
+.moreinfo p {
+    margin: .5rem;
+    color: #214c6f;
+    font-weight: 600;
+}
+
+.moreinfo textarea {
+    color: #603913;
+    font-size: .9rem;
+    font-family: 'Lato', sans-serif;
+    height: 6rem;
+    width: 30vw;
+    display: block;
+    margin: .3rem 0 0 .3rem;
+}
+
+.moreinfo [type=submit] {
+    background-color: rgba(116, 147, 67, 1);
+    border: none;
+    border-radius: 5px;
+    color: #fafafa;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: .5rem 2rem .5rem 2rem;
+    margin: .5rem 0 0 .3rem;
+}
+
+.moreinfo select {
+    background: rgba(141, 192, 188, .1);
+    width: 20%;
+    height: 2rem;
+    color: #603913;
+    border: 1px solid #214c6f;
+    border-radius: 3px;
+    position: relative;
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+}
+
+
+/* info video links styling */
+
+figure.hawaii {
+    display: block;
+    float: left;
+    width: 75%;
+    margin: .5rem .5rem .5rem 2rem;
+    border: solid 1px #8dc0bc;
+    padding: .5rem;
+    background-color: rgba(237, 192, 78, .4);
+}
+
+figure.hawaii img {
+    width: 40%;
+    height: auto;
+}
+
+figure.hawaii figcaption {
+    width: 100%;
+    font-size: .8rem;
+    display: flex;
+    text-align: left;
+    color: #214c6f;
+    padding: .2rem;
+    margin: 0 0 0 1rem;
+}
+
+figure.florida {
+    display: block;
+    float: left;
+    width: 75%;
+    margin: .5rem .5rem .5rem 2rem;
+    border: solid 1px #8dc0bc;
+    padding: .5rem;
+    background-color: rgba(237, 192, 78, .4);
+}
+
+figure.florida img {
+    width: 40%;
+    height: auto;
+}
+figure.florida figcaption {
+    width: 100%;
+    font-size: .8rem;
+    display: flex;
+    text-align: left;
+    color: #214c6f;
+    padding: .2rem;
+    margin: 0 0 0 1rem;
+}
+
+figure.california {
+    display: block;
+    float: left;
+    width: 75%;
+    margin: .5rem .5rem .5rem 2rem;
+    border: solid 1px #8dc0bc;
+    padding: .5rem;
+    background-color: rgba(237, 192, 78, .4);
+}
+
+figure.california img {
+    width: 40%;
+    height: auto;
+}
+figure.california figcaption{
+    width: 100%;
+    font-size: .8rem;
+    display: flex;
+    text-align: left;
+    color: #214c6f;
+    padding: .2rem;
+    margin: 0 0 0 1rem;
+}
+
+figure.tennessee {
+    display: block;
+    float: left;
+    width: 75%;
+    margin: .5rem .5rem .5rem 2rem;
+    border: solid 1px #8dc0bc;
+    padding: .5rem;
+    background-color: rgba(237, 192, 78, .4);
+}
+
+figure.tennessee img {
+    width: 40%;
+    height: auto;
+}
+figure.tennessee figcaption {
+    width: 100%;
+    font-size: .8rem;
+    display: flex;
+    text-align: left;
+    color: #214c6f;
+    padding: .2rem;
+    margin: 0 0 0 1rem;
+}
+
+figure.texas {
+    display: block;
+    float: left;
+    width: 75%;
+    margin: .5rem .5rem .5rem 2rem;
+    border: solid 1px #8dc0bc;
+    padding: .5rem;
+    background-color: rgba(237, 192, 78, .4);
+}
+
+figure.texas img {
+    width: 40%;
+    height: auto;
+}
+figure.texas figcaption {
+    width: 100%;
+    font-size: .8rem;
+    display: flex;
+    text-align: left;
+    color: #214c6f;
+    padding: .2rem;
+    margin: 0 0 0 1rem;
+}
+
+figure.washington {
+    display: block;
+    float: left;
+    width: 75%;
+    margin: .5rem .5rem .5rem 2rem;
+    border: solid 1px #8dc0bc;
+    padding: .5rem;
+    background-color: rgba(237, 192, 78, .4);
+}
+
+figure.washington img {
+    width: 40%;
+    height: auto;
+}
+figure.washington figcaption {
+    width: 100%;
+    font-size: .8rem;
+    display: flex;
+    text-align: left;
+    color: #214c6f;
+    padding: .2rem;
+    margin: 0 0 0 1rem;
+}
+
+figure.paragraph {
+    border: 1px solid #8dc0bc;
+    padding: .5rem;
+    margin: 1rem .5rem 1rem .8rem;
+}
+
+figure.paragraph img {
+    width: 40%;
+    height: auto;
+    margin: .5rem;
+}
+
+
+/* Footer Styling */
+
+footer {
+    background-color: #f7f4e8;
+    text-align: center;
+    color: #214c6f;
+    padding: .25rem;
+    font-size: 1rem;
+    clear: both;
+}
+    
+footer a {
+    color: #214c6f;
+}
+    
+footer a:hover {
+    color: #f15e43;
+}
+
+/* sitewide styling */
+nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+header {
+    max-width: 66rem;
+    margin: 0 auto;
+}
